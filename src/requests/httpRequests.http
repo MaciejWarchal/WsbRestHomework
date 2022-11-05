@@ -1,0 +1,17 @@
+
+GET http://localhost:8080/atoms
+###
+
+GET http://localhost:8080/atoms/2
+###
+
+POST http://localhost:8080/atoms
+Content-Type: application/json
+{
+"atomicNumber": 79,
+  "name": "gold",
+  "symbol": "Au",
+  "atomicWeight": 196.967,
+  "stateOfMatter": "solid"
+}
+###

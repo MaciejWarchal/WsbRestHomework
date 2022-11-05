@@ -30,7 +30,7 @@ public class AtomsRepository {
     }
 
     public Atom create(AtomDTo atomDTo){
-        Atom newAtom= new Atom(currentID,atomDTo);
+        Atom newAtom= new Atom(currentID++,atomDTo);
         atomsList.add(newAtom);
         return newAtom;
     }
