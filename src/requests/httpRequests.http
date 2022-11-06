@@ -8,10 +8,21 @@ GET http://localhost:8080/atoms/2
 POST http://localhost:8080/atoms
 Content-Type: application/json
 {
-"atomicNumber": 79,
+  "atomicNumber": 79,
   "name": "gold",
   "symbol": "Au",
   "atomicWeight": 196.967,
   "stateOfMatter": "solid"
 }
 ###
+PUT http://localhost:8080/atoms/1
+Content-Type: application/json
+{
+  "atomicNumber": 79,
+  "name": "gold",
+  "symbol": "Au",
+  "atomicWeight": 196.967,
+  "stateOfMatter": "solid"
+}
+###
+DELETE  http://localhost:8080/atoms/1
